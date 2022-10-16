@@ -54,7 +54,11 @@ ul {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url('../images/hero-img.jpg') ;
     max-width: 1600px;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: auto;
+    background-position:center;
+    background-repeat: no-repeat;
 
 }
 .site-nav-item {
@@ -159,10 +163,10 @@ justify-content: center;
 .auth-nav-link {
     text-decoration: none;
     color: var(--secondary-color);
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     align-items: center;
-    margin-left: auto;
+    
     
     
 }
@@ -445,6 +449,7 @@ border: none;
 .filter-button:hover, .filter-button:focus {
 color: var(--main-light);
 background-color: var(--outline-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .link-title {
@@ -511,6 +516,14 @@ color: var(--secondary-color);
     overflow: hidden;
   }
 
+  .image-link {
+    display: block;
+
+  }
+.image-link:hover, .image-link:focus {
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
   .icon-contacts {
     display: inline-block;
     margin-right: 10px;
@@ -539,11 +552,11 @@ color: var(--secondary-color);
 
 .team-section-svg-container {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    margin-inline: auto;
     margin-top: 16px;
     align-items: center;
-    padding-left: 30px;
+    
 }
 
 
@@ -555,7 +568,6 @@ color: var(--secondary-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    outline: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
@@ -567,13 +579,11 @@ color: var(--secondary-color);
 }
 .team-section-icon-wrapper:hover,
 .team-section-icon-wrapper:focus {
-    outline: none;
     background-color: #2196F3;
 }
 
 .team-section-icon-wrapper:hover .team-section-svg,
 .team-section-icon-wrapper:focus .team-section-svg {
-    outline: none;
     fill: #FFFFFF;
 }
 .our-clients-svg-wrapper{
@@ -618,12 +628,10 @@ color: var(--secondary-color);
 
 .our-clients-link:hover .our-clients-svg,
 .our-clients-link:focus .our-clients-svg{
-    outline: none;
     fill: #2196F3;
 }
 .our-clients-link:hover,
 .our-clients-link:focus{
-    outline: none;
     border: 1px solid #2196F3;
 
 }
@@ -637,8 +645,7 @@ color: var(--secondary-color);
 .main-footer__p-link:hover,
 .main-footer__p-link:focus{
     color: #2196F3;
-    outline: none;
-}
+    }
 
 .main-footer__join-us{
     margin-left: 70px;
