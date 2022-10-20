@@ -518,6 +518,7 @@ color: var(--secondary-color);
 
   .image-link {
     display: block;
+    text-decoration: none;
 
   }
 .image-link:hover, .image-link:focus {
@@ -688,7 +689,7 @@ color: #FFFFFF;
 .main-footer__icon-wrapper:hover,
 .main-footer__icon-wrapper:focus {
     background-color: #2196F3;
-    outline: none;
+    
 }
 
 
